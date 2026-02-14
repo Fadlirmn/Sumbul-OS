@@ -1,22 +1,36 @@
 # 🐍 Sumbul OS v1.0 - Arduino Nano Console
 
-Proyek konsol mini multifungsi berbasis **Arduino Nano** yang menggabungkan fitur **Countdown Timer** (Manual & Preset) dengan game klasik **Snake** ala Nokia 3310. Perangkat ini menggunakan dual-display untuk visibilitas maksimal: OLED untuk menu/grafik game dan 7-Segment untuk angka waktu/skor.
+A multi-functional mini-console project based on the Arduino Nano that combines a Countdown Timer (Manual & Preset) with the classic Snake game, inspired by the Nokia 3310. This device utilizes a dual-display setup for maximum visibility: an OLED for menus/game graphics and a 7-segment display for time and scores.
 
-## 🖼️ Skematik Rangkaian
+## 🖼️ Schmetics Circuit
 ![Skematik Rangkaian](img/skematik.png)
 
-## 🚀 Fitur Utama
-- **Dual Display System**:
-  - OLED 0.96" I2C: Menampilkan Menu Utama, Grafik Game, dan Status.
-  - 7-Segment TM1637: Menampilkan angka Countdown (MM:SS) dan Skor Game.
-- **3 Mode Operasi**:
-  - **Manual Timer**: Atur waktu sesuai keinginan (Menit & Detik).
-  - **Preset Timer**: Pilihan cepat 1 menit, 5 menit, dan 10 menit.
-  - **Snake Game**: Game ular klasik dengan fitur simpan skor tertinggi (High Score).
-- **Audio Feedback**: Startup Nokia Tune, suara makan (Snake), dan Alarm Timer menggunakan modul Buzzer Low Level Trigger.
-- **High Score Persistence**: Skor tertinggi tetap tersimpan di EEPROM meskipun perangkat dimatikan.
+## 🖼️ Snake Game
+![Skematik Rangkaian](img/snake-game.png)
 
-## 🛠️ Daftar Komponen
+## 🖼️ Timer
+![Skematik Rangkaian](img/timer.png)
+
+## 🚀 FKey Features
+Dual Display System:
+
+0.96" I2C OLED: Displays the Main Menu, Game Graphics, and Status.
+
+TM1637 7-Segment: Displays the Countdown timer (MM:SS) and Game Scores.
+
+3 Operating Modes:
+
+Manual Timer: Set a custom duration (Minutes & Seconds).
+
+Preset Timer: Quick-start options for 1, 5, and 10 minutes.
+
+Snake Game: Classic snake gameplay with high score saving.
+
+Audio Feedback: Features a Nokia-style startup tune, in-game sound effects (eating), and a timer alarm using a Low-Level Trigger Buzzer.
+
+High Score Persistence: The highest score is saved to the EEPROM, ensuring it remains even after the device is powered off.
+
+## 🛠️ Components List
 - Arduino Nano
 - OLED 0.96" I2C (SSD1306)
 - 7-Segment Display (TM1637)
@@ -34,7 +48,7 @@ Proyek konsol mini multifungsi berbasis **Arduino Nano** yang menggabungkan fitu
 | **Button LEFT/RIGHT** | D6 / D7 |
 | **Button SELECT** | D2 |
 
-## 📦 Library yang Dibutuhkan
+## 📦 Required Libraries
 1. `Adafruit_SSD1306`
 2. `Adafruit_GFX`
 3. `TM1637Display`
