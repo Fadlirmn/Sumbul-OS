@@ -1,6 +1,9 @@
 # 🐍 Sumbul OS v1.0 - Arduino Nano Console
 
-Proyek konsol mini multifungsi berbasis **Arduino Nano** yang menggabungkan fitur **Countown Timer** (Manual & Preset) dengan game klasik **Snake** ala Nokia 3310. Perangkat ini menggunakan dual-display untuk visibilitas maksimal: OLED untuk menu/grafik game dan 7-Segment untuk angka waktu/skor.
+Proyek konsol mini multifungsi berbasis **Arduino Nano** yang menggabungkan fitur **Countdown Timer** (Manual & Preset) dengan game klasik **Snake** ala Nokia 3310. Perangkat ini menggunakan dual-display untuk visibilitas maksimal: OLED untuk menu/grafik game dan 7-Segment untuk angka waktu/skor.
+
+## 🖼️ Skematik Rangkaian
+![Skematik Rangkaian](img/skematik.png)
 
 ## 🚀 Fitur Utama
 - **Dual Display System**:
@@ -36,9 +39,3 @@ Proyek konsol mini multifungsi berbasis **Arduino Nano** yang menggabungkan fitu
 2. `Adafruit_GFX`
 3. `TM1637Display`
 4. `EEPROM` (Bawaan Arduino)
-
-## 🎮 Cara Penggunaan
-1. Hubungkan perangkat ke sumber daya 5V.
-2. Tunggu "Sumbul OS" loading dan melodi selesai.
-3. Gunakan tombol **UP/DOWN** untuk memilih menu, dan **SELECT** untuk masuk.
-4. Pada mode Timer, gunakan arah panah untuk mengatur waktu dan **SELECT** untuk memulai.
